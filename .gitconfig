@@ -3,4 +3,4 @@
 [alias]
 	adog = log --all --decorate --oneline --graph
 [include]
-    path = local.gitconfig
+  path = local.gitconfig

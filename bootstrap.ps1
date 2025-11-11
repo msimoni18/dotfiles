@@ -1,7 +1,7 @@
 # Clone dotfiles repo
 if (!(Test-Path -Path $HOME\dotfiles)) {
     echo 'cloning dotfiles repository to $HOME...'
-    git clone git@github.com:McClunatic\dotfiles.git $HOME\dotfiles
+    git clone git@github.com:msimoni18\dotfiles.git $HOME\dotfiles
 }
 
 # Stash current files to restore HEAD files
