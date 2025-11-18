@@ -1,12 +1,7 @@
 format = '$all'
-# right_format = '$time'
 
 # Disable newline between prompts
 add_newline = false
-
-[fill]
-symbol = '-'
-style = 'bold green'
 
 [shell]
 disabled = false
@@ -31,18 +26,3 @@ ignore_branches = ['']
 [git_commit]
 commit_hash_length = 4
 tag_symbol = '🔖 '
-
-[memory_usage]
-disabled = false
-threshold = -1
-symbol = ' '
-style = 'bold dimmed green'
-
-[nodejs]
-format = 'via [🤖 $version](bold green) '
-
-# [time]
-# disabled = false
-# format = '🕙[\[ $time \]]($style) '
-# time_format = '%T'
-# utc_time_offset = '-5'

@@ -8,6 +8,18 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# For macOS
+if [ -x $HOME/.dircolors ]; then
+    eval $(gdircolors ~/.dircolors/dircolors.256dark)
+    test -r ~/.dircolors && eval "$(gdircolors -b ~/.dircolors/dircolors.256dark)" || eval "$(gdircolors -b)"
+
+    alias ls='gls --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
